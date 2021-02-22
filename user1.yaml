@@ -1,0 +1,12 @@
+---
+- name: User Setup in Managed host
+  hosts: all
+
+  tasks:
+  - name: Create first User in db_servers
+    user:
+      name: new1
+      uid: 4008
+      comment: 'This is first user'
+      state: present
+
